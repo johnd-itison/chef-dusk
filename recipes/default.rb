@@ -2,6 +2,11 @@ include_recipe 'runit'
 
 user node[:dusk][:user]
 
+directory "#{node[:dusk][:root]}/shared/log" do
+  owner node[:dusk][:user]
+  recursive true
+end
+
 deploy_revision node[:dusk][:root] do
   repo node[:dusk][:repo]
   revision node[:dusk][:revision]
