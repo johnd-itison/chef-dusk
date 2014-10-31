@@ -1,5 +1,9 @@
 #!/bin/sh
 
+if [ -f /opt/rbenv/shims/ruby ]; then
+  export PATH=/opt/rbenv/shims:$PATH
+fi
+
 env=$PWD/env
 
 exec 2>&1
