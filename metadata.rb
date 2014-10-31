@@ -1,5 +1,5 @@
 name 'dusk'
-version '0.0.2'
+version '0.0.3'
 description 'Graphite/Cubism frontend'
 license 'Apache v2.0'
 maintainer 'Simple Finance'
